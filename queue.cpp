@@ -43,6 +43,14 @@ bool Queue::isFull(){
 	return full;
 }
 
+bool Queue::isEmpty(){
+	bool empty = false;
+	if (head == tail){
+		cout<<"empty\n";
+		empty = true;
+	}
+	return empty;
+}
 
 void Queue::Doubling(){
 
@@ -60,5 +68,25 @@ void Queue::Doubling(){
     full = false;
 
     return;
+}
+
+void Queue::queuesize(){
+
+    int arrsize = tail - head;
+
+    cout << arrsize << endl;
+}
+
+void Queue::who(int arrsize){
+
+    cout << items[arrsize] << endl;
+
+}
+
+void Queue::message(){
+
+    if(tail-head == (maxLength/10)*9) cout << "Server is getting busy." << endl;
+    else cout << "Server is fine." << endl;
+
 }
 

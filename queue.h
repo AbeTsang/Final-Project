@@ -11,7 +11,11 @@ class Queue{
 	void enqueue(int);
 	int dequeue();
 	bool isFull();
+	bool isEmpty();
 	void Doubling();
+	void queuesize();
+	void who(int);
+	void message();
 
 };
 
